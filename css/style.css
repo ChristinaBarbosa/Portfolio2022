@@ -1,4 +1,6 @@
-    /* Define Global Css*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/* Define Global Css*/
 body {
     font-family: 'Roboto' , sans-serif; 
     font-weight: 700;
