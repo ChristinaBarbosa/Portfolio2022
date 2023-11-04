@@ -11,86 +11,371 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+<!--Favicon-->
+<link rel="icon" href="img/Logo.png">
+	  
 </head>
 
-<!-- Responsive Navbar -->
-<header class="sticky-top bg-white col-xl-12">
-<nav class="navbar navbar-expand-lg navbar-light container">
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <style>
+        
+        /* Image Columns */
 
-<div class="row text-center col-xl-12">
-    <div class="col-3 col-md-1 offset-md-8 offset-lg-8 mt-3 offset-xl-0">
-	   <a class="navbar-brand" href="index.html"><img src="https://github.com/ChristinaBarbosa/Images/blob/153701b27196ddc8526f4ab49ed74268e5db2ff0/clb.png?raw=true" alt="..." height="40"></a>
-	</div>
-	<div class="col-3 col-md-1 offset-md-8 offset-lg-8 mt-3 col-xl-1.5 offset-xl-7">
-       <p class="my-2 label"><a class="link-primary" href="index.html">Home</a></p>
-    </div>
-    <div class="col-3 col-md-1 mt-3 col-xl-1.5">
-       <p class="my-2 label"><a class="link-secondary" style="text-decoration: none;" target="blank" href="img/ChristinaBarbosa_Resume_2022.pdf">Resume</a></p>
-    </div>
-    <div class="col-3 col-md-1 mt-3 col-xl-1.5">
-       <p class="my-2 label"><a class="link-secondary" style="text-decoration: none;" href="about.html">About</a></p>
-    </div>
-    <div class="col-3 col-md-1 mt-3 col-xl-1.5">
-       <p class="my-2 label"><a class="link-secondary" style="text-decoration: none;" href="mailto:christinalbarbosa@gmail.com">Contact</a></p>
-    </div>
-</div>
-</div>
-</nav>
-</header>
-<!-- Header-->
+        .col1 {
+            background-image: url(img/bg1.jpeg); 
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+        .col2 {
+            background-image: url(img/bg2.jpeg);
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+        .col3 {
+            background-image: url(img/bg3.jpeg);
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+		.col4 {
+            background-image: url(img/bg1.png);
+			background-position: left;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+		.col5 {
+            background-image: url(img/bg2.png);
+			background-position: left;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+		.col6 {
+            background-image: url(img/bg3.png);
+			background-position: left;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }	
+		.col7 {
+            background-image: url(img/bg4.png);
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+		.col8 {
+            background-image: url(img/bg5.png);
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }			
+        
+        /* Image To Text On Hover */
+        
+        .hovtxt {
+            background:#00000080;
+            opacity:0;
+            transition-duration:.5s;
+            transition-timing-function: ease-in-out;
+            height:300px;
+        }
+        
+         .hovtxt:hover {
+            opacity:1;
+        }
+    
+    </style>
+
+	
+<!-- Responsive Navbar -->
 <body>
-<!--Banner-->	
-	<div class="row d-flex align-items-center justify-content-center bkg-light-grey">
-            <div class="col-12 order-2 col-lg-6 order-lg-1 order-xl-1 px-0 " style="width: 100%">
-                <p class="text-center"><img class="img-fluid" src="https://github.com/ChristinaBarbosa/Images/blob/153701b27196ddc8526f4ab49ed74268e5db2ff0/IMG_9971.png?raw=true" alt="Christina Barbosa" width="70%"></p>
+    <header class="sticky-top bkg-light-grey">
+        <!-- Replace this part with the navigation bar from the second HTML code -->
+        <nav class="navbar navbar-expand-lg col-xl-12 navbar-light bg-light" id="main-bar">
+            <!--Logo-->
+            <div class="order-0 order-md-1 position-absolute main-logo">
+                <a class="mx-auto" href="index.html">
+                    <img src="img/Logo.png" class="nav-brand" alt="logo" height="30px" width="50px">
+                </a>
             </div>
-		   
-            <div class="col-12 order-1 col-lg-6 order-xl-2 align-items-self">
-             <h1 class="ml-3 mb-2 mobile-headline"><span class="d-none d-sm-inline"> Hello, I am Christina Barbosa</span></h1>
-   <h3 class="ml-3 mr-1 mb-5 mobile-subhead">I create UX/UI and Graphic Design</h3>
-   <div class="col-12 d-inline">
-   <a class="btn-primary" href="mailto:christinalbarbosa@gmail.com" target="blank">Get in Touch</a>
+            <!--End of Logo-->
+
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse flex-grow-1 text-right text-black" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase" target="blank" href="img/ChristinaBarbosa_Resume_2022.pdf"
+                            id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Resume</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase" href="about.html" id="navbarDropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase" href="mailto:christinalbarbosa@gmail.com" id="navbarDropdown"
+                            role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="container col-xl-12">
+                                <div class="row col-xl-12">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="text-uppercase text-black">UX/UI Design</span>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="casestudy2.html">Homeland Security</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="casestudy.html">Food Culture</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="casestudy3.html">Amazing Lash Studio</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.col-md-4  -->
+                                    <div class="col-md-4 offset-xl-0 col-xl-3">
+                                        <span class="text-uppercase text-black">Graphic Design</span>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="graphicdesign.html">Rayito De Sol</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="graphicdesign2.html">Angel's Bridal</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="graphicdesign3.html">Amazing Lash Studio</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.col-md-4  -->
+                                </div>
+                            </div>
+                            <!--  /.container  -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- End of Header-->
+<!--Banner-->		
+	<div class="row d-flex align-items-center justify-content-center bkg-light-grey">
+	<div class="container my-0 py-0 px-0" style="width: 100%">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 order-2 col-lg-6 order-lg-1 order-xl-1 py-0 px-0">
+                <p class="text-center"><img class="img-fluid" src="img/IMG_9971.png" alt="Christina Barbosa" width="90%"></p>
+            </div>
+            <div class="col-12 order-1 col-lg-6 order-lg-2 order-xl-2 px-4">
+ <h1 class="ml-3 mr-1 mb-2 mobile-headline"><span class="d-none d-sm-inline"> Hello, I am Christina Barbosa</span></h1>
+ <h2 class="ml-3 mr-1 mb-5 mobile-subhead">I create UX/UI and Graphic Design</h2>
+<div class="col-12 d-inline">
+  <a class="btn-primary" href="mailto:christinalbarbosa@gmail.com" target="blank">Get in Touch</a>
+</div>
           </div>
         </div>
 </div>
+</div>	
 	
-<div> 
+<!--Text-->	
+<div class="row text-center">
+  <div class="col-12">
+    <h3 class="font-weight-bold text-uppercase" style="padding-bottom:20px; padding-top:30px;">Projects</h3>
+  </div>
+</div>	
 	
-<div class="container">        
-	<!--Main Cards-->
-        <!--Row Three-->
-        <div class="row row-eq-height my-5">
-            <!--Home Security-->
-            <div class="col-12 col-lg-6 my-3 px-3">
-                <div class="bkg-light-grey" style="width: 100%">
-                    <a href="casestudy2.html" class="link-content-wrapper">
-                        <img class="img-fluid" src="https://github.com/ChristinaBarbosa/Portfolio.github.io/blob/main/images/C1.png?raw=true"
-                            alt="DHS"></a>
-                </div>
-                <div class="py-4 px-5 bkg-light-grey">
-                    <h2 class="font-weight-bold">Homeland Security</h2>
-                    <p>Website usability and redesign for United State Department of Homeland Security, DHS.gov.</p>
-</div>
-            </div>
-            <!--Food Cultures-->
-            <div class="col-12 col-lg-6 my-3 px-3">
-                <div class="bkg-light-grey" style="width: 100%">
-					<a href="casestudy.html" class="link-content-wrapper">
-                        <img class="img-fluid" src="https://github.com/ChristinaBarbosa/Portfolio.github.io/blob/main/images/C3.png?raw=true"
-							 alt="FoodCulture"></a>
-                </div>
-                <div class="py-4 px-5 bkg-light-grey">
-                    <h2 class="font-weight-bold">Food Culture App</h2>
-                    <p>Case Study and Design for a new&nbsp; food ordering and delivery  App with a fun twist.</p>
-</div>
-            </div>
+<!--Card Hover-->	
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+          <div class="col1 p-0 my-0 ml-6">
+                <div class="hovtxt p-5 text-center text-light">
+					<a href="casestudy2.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+				    <h4><em>2022</em></h4>
+                    <h2>Homeland Security Redesign</h2></a>                
+              </div>
+				</div>
+                 <div class="py-4 px-5 bkg-light-grey">
+                 <h2 class="font-weight-bold">Homeland Security</h2>
+				 <p>Website usability and redesign for United State Department of Homeland Security, DHS.gov.</p>
+				 <a href="casestudy2.html" class="link-primary">View Redesign</a>
+            </div>            
         </div>
-<!--Row Two-->
+		
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col2 p-0 m-0 my-0 mr-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="casestudy.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2022</em></h4>
+					<h2>Food Culture Case Study</h2></a>                
+                </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Food Culture App</h2>
+                <p>Case Study and Design for a new food ordering and delivery  App with a fun twist.</p>
+				<a href="casestudy.html" class="link-primary">View Project</a>
+            </div>            
         </div>
-    </div>
-		</body>
+<!--Row Two-->		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col3 p-0 m-0 my-0 ml-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="casestudy3.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2022</em></h4>
+					<h2>Amazing Lash Studio Redesign</h2>
+                    </a>                
+                </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Amazing Lash Studio</h2>
+                <p>Website usability and redesigned for Amazing Lash Studio, a beauty services retailer focused on eyelash extensions.</p>
+				<a href="casestudy3.html" class="link-primary">View Redesign</a>
+            </div>            
+        </div>
+		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col4 p-0 m-0 my-0 mr-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="graphicdesign.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2019</em></h4>
+					<h2>Rayito de Sol</h2>
+                    </a>                
+                </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Rayito de Sol</h2>
+                <p>Digital Media content created for Rayito de Sol, a Spanish immersion early learning center.</p>
+				<a href="graphicdesign.html" class="link-primary">View Project</a>
+            </div>            
+        </div>
+<!--Row Three-->		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+        <div class="col5 p-0 m-0 my-0 ml-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="graphicdesign2.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2019</em></h4>
+					<h2>Angel's Bridal</h2>
+                    </a>                
+            </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Angel's Bridal</h2>
+                <p>Digital Media content created for Angel's Bridal, a neighborhood bridal salon in Staten Island, New York.</p>
+				<a href="graphicdesign2.html" class="link-primary">View Project</a>
+        </div>            
+      </div>
+		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+        <div class="col6 p-0 m-0 my-0 mr-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="graphicdesign3.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2018</em></h4>
+					<h2>Amazing Lash Studio</h2>
+                    </a>                
+            </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Amazing Lash Studio</h2>
+                <p>Graphic Design for Amazing Lash Studio, 2018 Summer to Holiday Social Media Content.</p>
+				<a href="graphicdesign3.html" class="link-primary">View Project</a>
+        </div>            
+      </div>
+<!--Row Four-->		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col7 p-0 m-0 my-0 ml-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="graphicdesign4.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2018</em></h4>
+					<h2>Lisa's Studio Rebranding</h2>
+                    </a>                
+                </div>
+		</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Lisa's Studio Photography</h2>
+                <p>Rebranding for Lisa's Studio Photography with a Logo and brand name refresh.</p>
+				<a href="graphicdesign4.html" class="link-primary">View Redesign</a>
+        </div>            
+      </div>
+		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col8 p-0 m-0 my-0 mr-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="graphicdesign5.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2018</em></h4>
+					<h2>Alice Adventures in Wonderland</h2>
+                    </a>                
+                </div>
+		</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Alice's Adventures in Wonderland</h2>
+                <p>Poker Cards Illustration based off of Lewis Caroll's novel, Alice's Adventures in Wonderland.</p>
+				<a href="graphicdesign5.html" class="link-primary">View Project</a>
+        </div>            
+      </div>			
+<!--Row End-->		
+  </div>
+</div>    	
+	
+
  <!--Connect-->
     <div class="container-fluid">
         <div class="row bkg-light-grey text-center py-5 my-5">
@@ -109,9 +394,11 @@
             </div>
         </div>
     </div>
+	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
+</body>
 </html>
